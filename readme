@@ -1,0 +1,67 @@
+The original version is a simple U-net model
+the image shape = 1024
+
+The conv1 layer shape is Tensor("Lesion/Encoder/conv1/BiasAdd:0", shape=(?, 512, 512, 32), dtype=float32)
+The conv2 layer shape is Tensor("Lesion/Encoder/conv2/BiasAdd:0", shape=(?, 256, 256, 64), dtype=float32)
+The conv3 layer shape is Tensor("Lesion/Encoder/conv3/BiasAdd:0", shape=(?, 128, 128, 128), dtype=float32)
+The conv4 layer shape is Tensor("Lesion/Encoder/conv4/BiasAdd:0", shape=(?, 64, 64, 256), dtype=float32)
+The conv5 layer shape is Tensor("Lesion/Encoder/conv5/BiasAdd:0", shape=(?, 32, 32, 512), dtype=float32)
+The conv6 layer shape is Tensor("Lesion/Encoder/conv6/BiasAdd:0", shape=(?, 16, 16, 1024), dtype=float32)
+The deconv1 layer shape is Tensor("Lesion/Decoder/deconv1/BiasAdd:0", shape=(?, 32, 32, 512), dtype=float32)
+The deconv2 layer shape is Tensor("Lesion/Decoder/deconv2/BiasAdd:0", shape=(?, 64, 64, 256), dtype=float32)
+The deconv3 layer shape is Tensor("Lesion/Decoder/deconv3/BiasAdd:0", shape=(?, 128, 128, 128), dtype=float32)
+The deconv4 layer shape is Tensor("Lesion/Decoder/deconv4/BiasAdd:0", shape=(?, 256, 256, 64), dtype=float32)
+The deconv5 layer shape is Tensor("Lesion/Decoder/deconv5/BiasAdd:0", shape=(?, 512, 512, 32), dtype=float32)
+The lesion_map layer shape is Tensor("Lesion/Decoder/clip_by_value:0", shape=(?, 1024, 1024, 1), dtype=float32)
+disc_rati0 = 0.116329079964 0.0882040071327
+cup_ratio = 0.287399460013 0.642265220204
+
+---------------------------------------------------------------------------------------------------------------
+The original version 1 is the Dense U-net model
+---------------------------------------------------------------------------------------------------------------
+
+The conv1 layer shape is Tensor("Lesion/Encoder/conv1/BiasAdd:0", shape=(?, 512, 512, 32), dtype=float32)
+The conv2 layer shape is Tensor("Lesion/Encoder/conv2/BiasAdd:0", shape=(?, 256, 256, 32), dtype=float32)
+The conv3 layer shape is Tensor("Lesion/Encoder/conv3/BiasAdd:0", shape=(?, 128, 128, 64), dtype=float32)
+The conv4 layer shape is Tensor("Lesion/Encoder/conv4/BiasAdd:0", shape=(?, 64, 64, 128), dtype=float32)
+The conv5 layer shape is Tensor("Lesion/Encoder/conv5/BiasAdd:0", shape=(?, 32, 32, 256), dtype=float32)
+The conv6 layer shape is Tensor("Lesion/Encoder/conv6/BiasAdd:0", shape=(?, 16, 16, 512), dtype=float32)
+The deconv1 layer shape is Tensor("Lesion/Decoder/deconv1/BiasAdd:0", shape=(?, 32, 32, 256), dtype=float32)
+The deconv2 layer shape is Tensor("Lesion/Decoder/deconv2/BiasAdd:0", shape=(?, 64, 64, 128), dtype=float32)
+The deconv3 layer shape is Tensor("Lesion/Decoder/deconv3/BiasAdd:0", shape=(?, 128, 128, 64), dtype=float32)
+The deconv4 layer shape is Tensor("Lesion/Decoder/deconv4/BiasAdd:0", shape=(?, 256, 256, 32), dtype=float32)
+The deconv5 layer shape is Tensor("Lesion/Decoder/deconv5/BiasAdd:0", shape=(?, 512, 512, 32), dtype=float32)
+The lesion_map layer shape is Tensor("Lesion/Decoder/clip_by_value:0", shape=(?, 1024, 1024, 1), dtype=float32)
+the image shape = 1024
+batch_size = 2
+however, this performance is bad
+disc_ratio = 0.229538997584 0.361497658313
+
+
+---------------------------------------------------------------------------------------------------------------
+The original version 2 is the simple U-net model
+---------------------------------------------------------------------------------------------------------------
+
+the image shape = 786
+
+
+
+---------------------------------------------------------------------------------------------------------------
+The original version 3 is the  Bring Forward Dense U-net model
+---------------------------------------------------------------------------------------------------------------
+the image shape = 1024
+batch size = 10
+The conv1 layer shape is Tensor("Lesion/Encoder/conv1/BiasAdd:0", shape=(?, 512, 512, 32), dtype=float32)
+The conv2 layer shape is Tensor("Lesion/Encoder/conv2/BiasAdd:0", shape=(?, 256, 256, 32), dtype=float32)
+The conv3 layer shape is Tensor("Lesion/Encoder/conv3/BiasAdd:0", shape=(?, 128, 128, 64), dtype=float32)
+The conv4 layer shape is Tensor("Lesion/Encoder/conv4/BiasAdd:0", shape=(?, 64, 64, 128), dtype=float32)
+The conv5 layer shape is Tensor("Lesion/Encoder/conv5/BiasAdd:0", shape=(?, 32, 32, 256), dtype=float32)
+The conv6 layer shape is Tensor("Lesion/Encoder/conv6/BiasAdd:0", shape=(?, 16, 16, 512), dtype=float32)
+The deconv1 layer shape is Tensor("Lesion/Decoder/deconv1/BiasAdd:0", shape=(?, 32, 32, 256), dtype=float32)
+The deconv2 layer shape is Tensor("Lesion/Decoder/deconv2/BiasAdd:0", shape=(?, 64, 64, 128), dtype=float32)
+The deconv3 layer shape is Tensor("Lesion/Decoder/deconv3/BiasAdd:0", shape=(?, 128, 128, 64), dtype=float32)
+The deconv4 layer shape is Tensor("Lesion/Decoder/deconv4/BiasAdd:0", shape=(?, 256, 256, 32), dtype=float32)
+The deconv5 layer shape is Tensor("Lesion/Decoder/deconv5/BiasAdd:0", shape=(?, 512, 512, 32), dtype=float32)
+The lesion_map layer shape is Tensor("Lesion/Decoder/clip_by_value:0", shape=(?, 1024, 1024, 1), dtype=float32)
+
+
